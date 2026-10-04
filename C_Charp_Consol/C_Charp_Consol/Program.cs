@@ -11,23 +11,49 @@ namespace C_Charp_Consol
         static void Main(string[] args)
         {
             int scale = 3;
-            int scale_long = Convert.ToInt32(Math.Pow(2, scale));
-            bool[,] arry_bool = new bool[scale+1, scale_long];
-            for(int i = 0; i<scale_long;i++)
-            {
-                string memore = Convert.ToString(i, 2);
-                for (int j = 0; j < scale; j++)
-                {
-                    arry_bool[j, i] = false;
-                }
-                for (int f = memore.Length; f < 0; f--)
-                {
-                    arry_bool[arry_bool.GetLength(0) + f - 1, i] = memore[f];
+            int scaleLong = Convert.ToInt32(Math.Pow(2, scale));
+            bool[,] arryBool = new bool[scaleLong, scale + 1];
+            //for(int i = 0; i<scaleLong;i++)
+            //{
+            //    string memore = Convert.ToString(i, 2);
+            //    int chfg = 0;
+            //    for (int k = memore.Length - 1; k >= 0; k--)
+            //    {
+            //        arryBool[i, k] = (memore[k] == '0') ? false : true;
+            //        //Console.Write(memore[k]);
 
-                }
+            //    }
+            //    Console.WriteLine();
 
-                Console.WriteLine();
-            }
+            //}
+
+            //0
+            //1
+            //01
+            //11
+            //001
+            //101
+            //011
+            //111
+
+
+            //for (int i = 0; i < scaleLong; i++)
+            //{
+            //    for (int j = 0; j < scale; j++)
+            //    {
+            //        if (arryBool[i, j] == false)
+            //        {
+            //            Console.Write('0');
+            //        }
+            //        else
+            //        {
+            //            Console.Write('1');
+            //        }
+
+            //    }
+            //    Console.WriteLine();
+            //}
+
             //int[] a = new int[] { 0, 0, 1 };
 
             //int[] b = new int[] { 1 };
@@ -43,7 +69,7 @@ namespace C_Charp_Consol
             //for (int i = a.Length - b.Length; i < a.Length; i++)
             //{
             //    a[i] = 0;
-               
+
             //}
         }
     }
