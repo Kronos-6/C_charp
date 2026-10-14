@@ -13,11 +13,6 @@ namespace C_Charp_Consol
         static void Main(string[] args)
         {
 
-
-        
-  
-
-
             //char[] arr = { 'a', 'b', 'c', };
             //foreach (char c in arr)
             //{
@@ -42,7 +37,7 @@ namespace C_Charp_Consol
                 int v = 0;
                 for (int j = 0; j < ll.Length; j++)
                 {
-                    if (ll[i] == ' ')
+                    if (ll[j] == ' ')
                     {
                         break;
                     }
