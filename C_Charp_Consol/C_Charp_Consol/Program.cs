@@ -13,9 +13,14 @@ namespace C_Charp_Consol
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine("Пенис");
 
         }
+    }
+
+    abstract class Miner
+    {
+        abstract protected void ShowInfo();
     }
     class Worker
     {
@@ -63,15 +68,15 @@ namespace C_Charp_Consol
         {
             _workers.Add(worker);
         }
-        public List<Worker> GetWorkers(List<Worker> workeruser)
-        {
-            _workers.
-            return workeruser;
-        }
-        public int GetTotalHours()
-        {
-            
-        }
+        //    public List<Worker> GetWorkers(List<Worker> workeruser)
+        //    {
+        //        _workers.
+        //        return workeruser;
+        //    }
+        //    public int GetTotalHours()
+        //    {
+
+        //    }
 
     }
 
